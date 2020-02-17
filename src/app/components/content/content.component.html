@@ -1,0 +1,17 @@
+ 
+
+    <br><a [routerLink]="['/add-todo']">Add todo</a><br><br>
+
+    <mat-accordion *ngFor="let todo of todos">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          {{todo.title}}
+        </mat-expansion-panel-header>
+        <div>{{todo.text}}</div><br>
+
+        <div><a href="">Редактировать</a> | 
+          <a href="" onclick="event.preventDefault()" (click)="removeTodo(todo._id)">Удалить</a></div>
+        </mat-expansion-panel>  
+    </mat-accordion>
+     
+  

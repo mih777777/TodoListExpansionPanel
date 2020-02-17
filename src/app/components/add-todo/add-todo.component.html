@@ -1,0 +1,20 @@
+<div class="main">
+    <br><a [routerLink]="['/']">Home</a><br><br>
+    
+    <form [formGroup]="form" (ngSubmit)="addTodo()">
+      <div>
+        <input 
+          type="text"
+          formControlName="title"
+        >
+      </div><br>
+      <div>
+        <textarea 
+          formControlName="text"
+          cols="30" rows="10"
+        ></textarea>
+      </div><br>
+      <button class="button" type="submit">Добавить</button>
+    </form>
+    
+</div>
