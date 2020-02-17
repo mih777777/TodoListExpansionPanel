@@ -2,9 +2,9 @@
 
     <br><a [routerLink]="['/add-todo']">Add todo</a><br><br>
 
-    <mat-accordion *ngFor="let todo of todos">
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
+    <mat-accordion *ngFor="let todo of todos" >
+      <mat-expansion-panel style="border-radius: 0px;">
+        <mat-expansion-panel-header >
           {{todo.title}}
         </mat-expansion-panel-header>
         <div>{{todo.text}}</div><br>

@@ -60,4 +60,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     border-radius: 3px;
   }
   
-   
+  .mat-expansion-panel {
+    background: white;
+    color: black;
+    border-radius: 10px;
+  }  
+
+  .mat-expansion-panel-body {
+    padding: 0 24px 16px;
+    border-radius: 1px;
+}
