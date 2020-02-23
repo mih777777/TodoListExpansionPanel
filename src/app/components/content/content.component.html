@@ -1,6 +1,7 @@
  
 
     <br><a [routerLink]="['/add-todo']">Add todo</a><br><br>
+    <!-- <br><a [routerLink]="['/edit-todo', ':id']">Edit todo</a><br><br> -->
 
     <mat-accordion *ngFor="let todo of todos" >
       <mat-expansion-panel style="border-radius: 0px;">
@@ -9,8 +10,17 @@
         </mat-expansion-panel-header>
         <div>{{todo.text}}</div><br>
 
-        <div><a href="">Редактировать</a> | 
-          <a href="" onclick="event.preventDefault()" (click)="removeTodo(todo._id)">Удалить</a></div>
+        <div>
+          <button
+          class="btn btn-link open"
+          
+          [routerLink]="['/edit-todo', todo._id]"
+          
+          >
+            Edit
+          </button> | 
+          <a href="" onclick="event.preventDefault()" (click)="removeTodo(todo._id)">Удалить</a>
+        </div>
         </mat-expansion-panel>  
     </mat-accordion>
      

@@ -9,12 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ContentComponent } from './components/content/content.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
+import { EditTodoComponent } from './components/edit-todo/edit-todo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentComponent,
-    AddTodoComponent
+    AddTodoComponent,
+    EditTodoComponent
   ],
   imports: [
     BrowserModule,
